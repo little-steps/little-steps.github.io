@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#101827">
+  <meta name="description" content="Little Steps is an independent mobile app studio creating educational apps, language-learning tools, games, and useful everyday mobile experiences.">
+  <title>Little Steps | Mobile App Studio</title>
+  <style>
+    :root {
+      color-scheme: light;
+      --ink: #172033; --muted: #647084; --brand: #3157d5;
+      --brand-dark: #2444b2; --line: #e7eaf0; --surface: #f6f8fc; --white: #fff;
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body { margin: 0; font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; color: var(--ink); background: var(--white); line-height: 1.65; }
+    a { color: inherit; }
+    .wrap { width: min(1100px, calc(100% - 40px)); margin: 0 auto; }
+    header { border-bottom: 1px solid var(--line); background: rgba(255,255,255,.95); }
+    .nav { min-height: 76px; display: flex; align-items: center; justify-content: space-between; gap: 20px; }
+    .logo { font-size: 1.25rem; font-weight: 800; letter-spacing: -.04em; text-decoration: none; }
+    .logo span { color: var(--brand); }
+    nav { display: flex; gap: 26px; }
+    nav a { text-decoration: none; color: var(--muted); font-size: .94rem; font-weight: 600; }
+    nav a:hover { color: var(--brand); }
+    .hero { padding: 94px 0 88px; background: radial-gradient(circle at 85% 15%, #e6edff 0, transparent 32%), linear-gradient(135deg, #f8faff, #fff 65%); }
+    .eyebrow { display: inline-block; color: var(--brand); background: #eaf0ff; border-radius: 999px; padding: 6px 13px; font-size: .82rem; font-weight: 750; letter-spacing: .04em; text-transform: uppercase; }
+    h1 { max-width: 760px; margin: 20px 0 18px; font-size: clamp(2.5rem, 6vw, 4.5rem); line-height: 1.08; letter-spacing: -.055em; }
+    .hero p { max-width: 680px; margin: 0; color: var(--muted); font-size: 1.15rem; }
+    .actions { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 30px; }
+    .btn { display: inline-block; padding: 12px 19px; border-radius: 10px; text-decoration: none; font-weight: 700; }
+    .btn-primary { color: white; background: var(--brand); }
+    .btn-primary:hover { background: var(--brand-dark); }
+    .btn-secondary { border: 1px solid var(--line); background: white; }
+    section { padding: 76px 0; }
+    .section-head { max-width: 700px; margin-bottom: 30px; }
+    h2 { margin: 0 0 10px; font-size: clamp(1.8rem, 4vw, 2.5rem); letter-spacing: -.04em; }
+    .section-head p, .about p { margin: 0; color: var(--muted); }
+    .grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; }
+    .card { padding: 23px; border: 1px solid var(--line); border-radius: 16px; background: white; box-shadow: 0 8px 28px rgba(20,35,70,.035); }
+    .app-icon { width: 48px; height: 48px; display: grid; place-items: center; border-radius: 13px; background: #edf1ff; color: var(--brand); font-size: 1.35rem; font-weight: 800; margin-bottom: 15px; }
+    .card h3 { margin: 0 0 6px; font-size: 1.08rem; }
+    .card p { margin: 0; color: var(--muted); font-size: .94rem; }
+    .tag { display: inline-block; margin-top: 15px; color: #52617a; background: var(--surface); border-radius: 6px; padding: 4px 8px; font-size: .75rem; font-weight: 700; }
+    .about-band { background: var(--surface); }
+    .about { max-width: 780px; }
+    .contact-card { padding: 30px; border-radius: 18px; background: #101827; color: white; }
+    .contact-card p { color: #c2cada; max-width: 680px; margin-bottom: 0; }
+    footer { padding: 25px 0; border-top: 1px solid var(--line); color: var(--muted); font-size: .88rem; }
+    footer .wrap { display: flex; justify-content: space-between; gap: 15px; flex-wrap: wrap; }
+    @media (max-width: 760px) { .grid { grid-template-columns: repeat(2, 1fr); } .hero { padding: 70px 0; } }
+    @media (max-width: 520px) { .grid { grid-template-columns: 1fr; } nav { gap: 13px; } nav a { font-size: .85rem; } .nav { min-height: 66px; } }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="wrap nav">
+      <a class="logo" href="#" aria-label="Little Steps home">little<span>steps</span></a>
+      <nav aria-label="Main navigation"><a href="#apps">Apps</a><a href="#about">About</a><a href="#contact">Contact</a></nav>
+    </div>
+  </header>
+  <main>
+    <section class="hero">
+      <div class="wrap">
+        <span class="eyebrow">Independent app studio</span>
+        <h1>Simple technology.<br>Useful everyday experiences.</h1>
+        <p>Little Steps creates mobile applications designed to make learning, productivity, and everyday tasks easier. We build practical experiences for Android and iOS users.</p>
+        <div class="actions"><a class="btn btn-primary" href="#apps">Explore our apps</a><a class="btn btn-secondary" href="#contact">Get in touch</a></div>
+      </div>
+    </section>
+    <section id="apps">
+      <div class="wrap">
+        <div class="section-head"><h2>Our apps</h2><p>Explore our collection of educational tools, language-learning apps, games, and everyday utilities.</p></div>
+        <div class="grid">
+          <article class="card"><div class="app-icon" aria-hidden="true">V</div><h3>VocabSearch: Learn English</h3><p>Build English vocabulary and strengthen language skills with a practical learning companion.</p><span class="tag">Language learning</span></article>
+          <article class="card"><div class="app-icon" aria-hidden="true">B</div><h3>BioLex – Biology Dictionary</h3><p>An offline biology reference to help learners explore scientific terms and concepts.</p><span class="tag">Education</span></article>
+          <article class="card"><div class="app-icon" aria-hidden="true">W</div><h3>WriteBand – IELTS Writing</h3><p>A writing practice companion for IELTS learners working to improve their writing skills.</p><span class="tag">IELTS preparation</span></article>
+          <article class="card"><div class="app-icon" aria-hidden="true">S</div><h3>Snake Learn &amp; Eat</h3><p>A casual snake game that combines playful gameplay with a learning-inspired experience.</p><span class="tag">Game</span></article>
+          <article class="card"><div class="app-icon" aria-hidden="true">C</div><h3>ChemLex – Chemistry Dictionary</h3><p>A chemistry reference for students exploring terminology, concepts, and definitions.</p><span class="tag">Education</span></article>
+          <article class="card"><div class="app-icon" aria-hidden="true">P</div><h3>PhysLex – Physics Dictionary</h3><p>A learning companion for looking up physics terminology, definitions, and explanations.</p><span class="tag">Education</span></article>
+          <article class="card"><div class="app-icon" aria-hidden="true">S</div><h3>SpanLex – Spanish Dictionary</h3><p>A Spanish dictionary project designed to support vocabulary lookup and language learning.</p><span class="tag">Language learning</span></article>
+          <article class="card"><div class="app-icon" aria-hidden="true">D</div><h3>DeutschLex – German Dictionary</h3><p>A German-English dictionary experience to help learners explore and build vocabulary.</p><span class="tag">Language learning</span></article>
+          <article class="card"><div class="app-icon" aria-hidden="true">↗</div><h3>Traffic Signs &amp; Driving Test</h3><p>Learn road signs and prepare for driving tests with traffic-sign lessons and practice questions.</p><span class="tag">Driving education</span></article>
+          <article class="card"><div class="app-icon" aria-hidden="true">✎</div><h3>DoodleKids</h3><p>A creative drawing and doodling experience made for kids to explore their imagination.</p><span class="tag">Creativity</span></article>
+          <article class="card"><div class="app-icon" aria-hidden="true">▶</div><h3>VideoNest - Downloader</h3><p>A video utility app for managing supported downloads and accessing media in one place.</p><span class="tag">Video utility</span></article>
+        </div>
+      </div>
+    </section>
+    <section id="about" class="about-band">
+      <div class="wrap about">
+        <h2>About Little Steps</h2>
+        <p>Little Steps is an independent software and mobile app studio focused on building accessible, reliable, and user-friendly digital products. Our portfolio includes educational dictionaries, language-learning tools, IELTS preparation, driving education, casual games, creative apps, and video utilities. We aim to improve our products continuously through thoughtful design, development, and user feedback.</p>
+      </div>
+    </section>
+    <section id="contact">
+      <div class="wrap"><div class="contact-card"><h2>Contact Little Steps</h2><p>For app support, business inquiries, or partnership opportunities, please use the contact details listed on our app store developer profile.</p></div></div>
+    </section>
+  </main>
+  <footer><div class="wrap"><span>© <span id="year">2026</span> Little Steps. All rights reserved.</span><span>Mobile apps for learning, creativity, and everyday life.</span></div></footer>
+  <script>document.getElementById("year").textContent = new Date().getFullYear();</script>
+</body>
+</html>
